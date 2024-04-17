@@ -1,6 +1,16 @@
-spring:
-  application:
-    name: keycloak
 
 server:
   port: 8000
+
+spring:
+  application:
+    name: keycloak
+  thymeleaf:
+    enabled: true
+    check-template-location: true
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+
