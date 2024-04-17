@@ -1,1 +1,6 @@
-spring.application.name=keycloak
+spring:
+  application:
+    name: keycloak
+
+server:
+  port: 8000
