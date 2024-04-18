@@ -25,7 +25,7 @@ spring:
         registration:
           keycloak:
             client-id: my_client
-            client-secret: KMZgIDxHBGcc4XmSdij8nYS95aUGcNp9
+            client-secret: s
             scope: openid, profile, roles
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8000/main
