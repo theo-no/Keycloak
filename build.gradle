@@ -32,6 +32,7 @@ dependencies {
 	//keycloak dependency 추가
 	implementation group: 'org.keycloak', name: 'keycloak-spring-boot-starter', version: '24.0.3'
 	//oauth2
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	//thymeleaf
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'

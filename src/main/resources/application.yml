@@ -13,4 +13,25 @@ spring:
     suffix: .html
     mode: HTML
     encoding: UTF-8
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8080/realms/my_realm
+#            authorization-uri: http://localhost:8080/realms/my_realm/protocol/openid-connect/auth
+#            token-uri: http://localhost:8080/realms/my_realm/protocol/openid-connect/token
+#            user-info-uri: http://localhost:8080/realms/my_realm/protocol/openid-connect/userinfo
+        registration:
+          keycloak:
+            client-id: my_client
+            client-secret: KMZgIDxHBGcc4XmSdij8nYS95aUGcNp9
+            scope: openid, profile, roles
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8000/main
+
+
+
+
+
 
