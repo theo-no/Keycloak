@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/")
 public class MainController {
 
-    @GetMapping("/main")
+//    @GetMapping("/main")
+    @GetMapping
     @ResponseBody
     public String mainPage(HttpServletRequest request, HttpServletResponse response){
         System.out.println("here : "+request+ "// response : "+response);
